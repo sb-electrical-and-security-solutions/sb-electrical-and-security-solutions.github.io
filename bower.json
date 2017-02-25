@@ -1,0 +1,6 @@
+{
+  "name": "front-end-boilerplate",
+  "dependencies": {
+    "normalize-css": "^5.0.0"
+  }
+}
