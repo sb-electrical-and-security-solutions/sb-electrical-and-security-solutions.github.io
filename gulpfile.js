@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
+var svgmin = require('gulp-svgmin');
 
 gulp.task('lint', function() {
     return gulp.src("sass/**/*.scss")
@@ -35,6 +36,12 @@ gulp.task('sass', function() {
         .pipe(postcss(plugins))
         .pipe(gulp.dest("css"))
         .pipe(browserSync.stream());
+});
+
+gulp.task('svg', function() {
+    return gulp.src("svg/*.svg")
+        .pipe(svgmin())
+        .pipe(gulp.dest("svg/build"));
 });
 
 gulp.task('default', ['serve']);
