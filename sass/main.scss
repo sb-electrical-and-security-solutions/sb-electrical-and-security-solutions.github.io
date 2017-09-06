@@ -9,7 +9,12 @@
 // Reset
 
 @import "reset/common";
+@import "reset/images";
 
 // Base
 
 @import "base/page";
+
+// Components
+
+@import "components/masthead";
