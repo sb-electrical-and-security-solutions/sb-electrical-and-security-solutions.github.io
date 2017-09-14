@@ -1,0 +1,10 @@
+// Container
+// Object wrapper.
+
+.o-container {
+    max-width: 60rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacer;
+    padding-left: $spacer;
+}

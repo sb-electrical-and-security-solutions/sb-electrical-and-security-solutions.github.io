@@ -3,8 +3,15 @@
 
 .c-masthead {
     padding: 3rem 0;
+    background-color: $black;
+}
+
+// Container
+
+.c-masthead__container {
+    @extend .o-container;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $black;
 }
